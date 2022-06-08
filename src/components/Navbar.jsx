@@ -13,19 +13,19 @@ const Navbar = ({ path }) => {
           </NavItem>
 
           <NavItem badge={path === "/contact"}>
-            <Link to="/">Contact</Link>
+            <Link to="/contact">Contact</Link>
           </NavItem>
 
           <NavItem badge={path === "/skills"}>
-            <Link to="/">Skills</Link>
+            <Link to="/skills">Skills</Link>
           </NavItem>
 
           <NavItem badge={path === "/portfolio"}>
-            <Link to="/">Portfolio</Link>
+            <Link to="/portfolio">Portfolio</Link>
           </NavItem>
 
           <NavItem badge={path === "/events"}>
-            <Link to="/">Challenges & Events</Link>
+            <Link to="/events">Events</Link>
           </NavItem>
         </NavList>
       </Content>
@@ -64,7 +64,7 @@ const NavList = styled.ul`
   overflow-y: hidden;
 
   &::-webkit-scrollbar {
-    display: none;
+    /* display: none; */
   }
 `;
 
@@ -73,6 +73,7 @@ const NavItem = styled.li`
   background-color: ${({ badge }) => badge && "#11aaaa"};
   min-width: fit-content;
   padding: 3px 7px;
+  order: ${({ badge }) => badge && "-1"};
 
   a {
     font-size: 15px;
