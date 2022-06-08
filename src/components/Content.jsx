@@ -6,7 +6,7 @@ const Content = (props) => {
 
 const Container = styled.main`
   margin: 0 20px;
-  padding: 10px;
+  padding: 20px 10px;
   background-color: rgba(255, 255, 255, 0.85);
   min-height: calc(100vh - 100px);
   border-radius: 10px;
