@@ -1,7 +1,6 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import styled from "styled-components";
 import Home from "./pages/Home";
-import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Portfolio from "./pages/Portfolio";
@@ -16,7 +15,6 @@ const App = () => {
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/about" element={<About />} />
         <Route path="/not-found" element={<NotFound />} />
         <Route path="/" element={<Home />} />
         <Route path="*" element={<Navigate to="/not-found" replace />} />

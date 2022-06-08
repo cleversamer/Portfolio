@@ -12,10 +12,6 @@ const Navbar = ({ path }) => {
             <Link to="/">Home</Link>
           </NavItem>
 
-          <NavItem badge={path === "/about"}>
-            <Link to="/about">About</Link>
-          </NavItem>
-
           <NavItem badge={path === "/contact"}>
             <Link to="/contact">Contact</Link>
           </NavItem>
