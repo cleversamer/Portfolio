@@ -8,6 +8,10 @@ const Navbar = ({ path }) => {
         <Avatar src="/assets/avatar.jpg" alt="cleversamerr" />
 
         <NavList>
+          <NavItem badge={path === "/"}>
+            <Link to="/">Home</Link>
+          </NavItem>
+
           <NavItem badge={path === "/about"}>
             <Link to="/about">About</Link>
           </NavItem>
@@ -73,7 +77,6 @@ const NavItem = styled.li`
   background-color: ${({ badge }) => badge && "#11aaaa"};
   min-width: fit-content;
   padding: 3px 7px;
-  order: ${({ badge }) => badge && "-1"};
 
   a {
     font-size: 15px;
@@ -83,6 +86,7 @@ const NavItem = styled.li`
 
     @media screen and (max-width: 767px) {
       padding: 10px;
+      order: ${({ badge }) => badge && "-1"};
     }
   }
 `;
