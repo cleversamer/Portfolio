@@ -10,6 +10,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -18,4 +22,8 @@ a {
 
 ul {
   list-style: none;
+}
+
+img {
+  cursor: pointer;
 }

@@ -62,10 +62,6 @@ const NavList = styled.ul`
   align-items: center;
   overflow-x: auto;
   overflow-y: hidden;
-
-  &::-webkit-scrollbar {
-    /* display: none; */
-  }
 `;
 
 const NavItem = styled.li`

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Content from "../components/Content";
@@ -40,11 +39,6 @@ const Home = () => {
               meet client needs. I also have experience working in a
               collaborative environment and presenting status updates to project
               stakeholders.
-            </Line>
-
-            <Line>
-              And not only this! For more information about me, please visit the{" "}
-              <Link to="/about">about page.</Link>
             </Line>
           </Paragraph>
         </CoverLetter>
