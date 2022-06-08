@@ -24,7 +24,9 @@ const App = () => {
 };
 
 const Container = styled.div`
-  background-image: url("assets/subtle-prism.svg");
+  background-image: url("/assets/subtle-prism.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   overflow: hidden;
 `;

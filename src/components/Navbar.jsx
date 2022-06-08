@@ -38,7 +38,7 @@ const Container = styled.nav`
 `;
 
 const Content = styled.div`
-  background-image: url("assets/liquid-cheese.svg");
+  background-image: url("/assets/liquid-cheese.svg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 70px;
