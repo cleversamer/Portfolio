@@ -4,7 +4,11 @@ import Progress from "./Progress";
 const Skill = ({ name, number, imgUrl }) => {
   return (
     <Container>
-      <SkillLogo src={imgUrl} alt={name} />
+      <SkillInfo>
+        <SkillLogo src={imgUrl} alt={name} />
+        <SkillHeading>{name}</SkillHeading>
+      </SkillInfo>
+
       <Progress number={number} />
     </Container>
   );
@@ -22,12 +26,23 @@ const Container = styled.article`
   }
 `;
 
+const SkillInfo = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 const SkillLogo = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
   display: inline-block;
-  margin: 0 auto;
+  margin-right: 5px;
+`;
+
+const SkillHeading = styled.h4`
+  font-size: 20px;
+  color: #333;
 `;
 
 export default Skill;

@@ -32,7 +32,7 @@ const Container = styled.article`
   width: 160px;
   height: 160px;
   position: relative;
-  margin-top: 30px;
+  margin-top: 10px;
 
   svg {
     position: absolute;
@@ -51,8 +51,11 @@ const Container = styled.article`
 
   @keyframes anim {
     100% {
-      stroke-dashoffset: ${({ number }) =>
-        450 - Math.floor((450 * number) / 100)};
+      stroke-dashoffset: ${({ number }) => {
+        number = Math.floor(number / 100);
+        number -= 100;
+        return 450 * number;
+      }};
     }
   }
 `;
