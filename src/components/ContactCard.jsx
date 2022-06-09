@@ -2,9 +2,11 @@
 import styled from "styled-components";
 
 const ContactCard = ({ path, alt, url }) => {
+  const isLocalPath = (p) => p.charAt(0) === "/";
+
   return (
     <Container>
-      <a href={url} target="_blank">
+      <a href={url} target={isLocalPath(url) ? "_self" : "_blank"}>
         <BackgroundImg src={path} alt={alt} />
       </a>
     </Container>
@@ -19,6 +21,9 @@ const Container = styled.article`
   border-radius: 10px;
   transition-duration: 0.3s;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &:hover {
     transform: scale(0.99);
