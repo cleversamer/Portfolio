@@ -2,43 +2,9 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Content from "../components/Content";
 import Skill from "../components/Skill";
+import { skills } from "../data";
 
 const Skills = () => {
-  const skills = [
-    { id: 1, name: "HTML", number: 50, imgUrl: "/assets/html.svg" },
-    { id: 2, name: "CSS", number: 90, imgUrl: "/assets/css.svg" },
-    { id: 3, name: "Sass", number: 85, imgUrl: "/assets/sass.svg" },
-    { id: 4, name: "JavaScript", number: 95, imgUrl: "/assets/js.svg" },
-    { id: 5, name: "React", number: 50, imgUrl: "/assets/react.svg" },
-    { id: 6, name: "Redux", number: 50, imgUrl: "/assets/redux.png" },
-    { id: 7, name: "MaterialUI", number: 50, imgUrl: "/assets/materialui.svg" },
-    { id: 8, name: "Node.js", number: 50, imgUrl: "/assets/node.svg" },
-    {
-      id: 9,
-      name: "RESTful API",
-      number: 50,
-      imgUrl: "/assets/restful-api.svg",
-    },
-    {
-      id: 10,
-      name: "MongoDB",
-      number: 50,
-      imgUrl: "/assets/mongodb.svg",
-    },
-    {
-      id: 11,
-      name: "Firebase",
-      number: 50,
-      imgUrl: "/assets/firebase.svg",
-    },
-    {
-      id: 12,
-      name: "Git",
-      number: 50,
-      imgUrl: "/assets/git.svg",
-    },
-  ];
-
   return (
     <Container>
       <Navbar path="/skills" />

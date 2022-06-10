@@ -1,10 +1,9 @@
 import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Content from "../components/Content";
+import { events } from "../data";
 
 const Events = () => {
-  const events = [];
-
   return (
     <Container>
       <Navbar path="/events" />
